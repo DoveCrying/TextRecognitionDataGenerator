@@ -117,7 +117,7 @@ def _sample_text(sess, args_text, translation):
             feed_dict={
                 vs.coordinates: coord[None, None, ...],
                 vs.sequence: sequence,
-                vs.bias: 1.0,
+                vs.bias: 4.0,
             },
         )
         phi_data += [phi[0, :]]
